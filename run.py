@@ -88,7 +88,16 @@ def find_credential(account_username):
     return Credential.find_by_account_username(account_username)
 
 
-
+def check_existing_credentials(account_username):
+    """
+    Function to check existing credential
+    ----------
+    name
+    Returns
+    -------
+    user
+    """
+    return Credential.find_by_account_username(account_username)
 
 
 def display_credentials():
