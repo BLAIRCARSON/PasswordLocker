@@ -96,6 +96,15 @@ class TestCredential(unittest.TestCase):
         found_credential =Credential.find_by_account_username("ba")
         self.assertEqual(found_credential.account_password, test_credential.account_password)
 
-    
+    def test_credential_exists(self):
+        self.new_credential.save_credential()
+        test_credential = Credential("facebook", "ba", "12345")
+        test_credential.save_credential()
+        credential_exists = Credential.credential_exists("ba")
+        self.assertTrue(credential_exists)
+        
+    def test_display_all_credentials(self):
+        self.assertEqual(Credential.display_credentials(), Credential.credential_list)
+
 if __name__ == '__main__':
     unittest.main()
