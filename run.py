@@ -131,22 +131,8 @@ def main():
             print("|Your password is set to invible for security reasons.Type Password|")#
             print("-"*87)
             getpass.getpass()
-            print("YOU ARE NOW LOGGED IN")
-        # elif create == "yes":
-        #     def random_password(string_length):
-        #         """
-        #         Parameters
-        #         ----------
-        #         string_length
-        #         Returns
-        #         -------
-        #         """
-        #         letters = string.ascii_letters
-        #         return "".join(random.choice(letters) for i in range(string_length))
-
-        #     print(
-        #         f"Your random password is: ", random_password(8))
-        #     print("You are now logged in: ")
+            print("YOU HAVE LOGGED IN SUCESSFULLY")
+        
         while True:
             print("""
             USE THE SHORT CODES
