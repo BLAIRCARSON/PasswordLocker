@@ -1,4 +1,4 @@
-# Password Locker
+# PasswordLocker
 
 ## Author
 
